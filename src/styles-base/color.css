@@ -1,0 +1,81 @@
+@layer base {
+  :root {
+    /* ---------------------- */
+    /* PRIMITIVE COLOR VALUES */
+    /* ---------------------- */
+    --hue: 225;
+
+    --black-oklch: 8% 0.015 var(--hue);
+    --black: oklch(var(--black-oklch));
+
+    --gray-900-oklch: 18% 0.032 var(--hue);
+    --gray-900: oklch(var(--gray-900-oklch));
+
+    --gray-800-oklch: 22.5% 0.011 var(--hue);
+    --gray-800: oklch(var(--gray-800-oklch));
+
+    --gray-700-oklch: 28% 0.009 var(--hue);
+    --gray-700: oklch(var(--gray-700-oklch));
+
+    --gray-650-oklch: 28% 0.009 var(--hue);
+    --gray-650: oklch(var(--gray-650-oklch));
+
+    --gray-600-oklch: 41% 0.009 var(--hue);
+    --gray-600: oklch(var(--gray-600-oklch));
+
+    --gray-500-oklch: 53% 0.009 var(--hue);
+    --gray-500: oklch(var(--gray-500-oklch));
+
+    --gray-400-oklch: 64% 0.0085 var(--hue);
+    --gray-400: oklch(var(--gray-400-oklch));
+
+    --gray-300-oklch: 75% 0.008 var(--hue);
+    --gray-300: oklch(var(--gray-300-oklch));
+
+    --gray-200-oklch: 85% 0.0075 var(--hue);
+    --gray-200: oklch(var(--gray-200-oklch));
+
+    --gray-100-oklch: 94% 0.0075 var(--hue);
+    --gray-100: oklch(var(--gray-100-oklch));
+
+    --gray-50-oklch: 97% 0.0075 var(--hue);
+    --gray-50: oklch(var(--gray-50-oklch));
+
+    --white-oklch: 100% 0.005 var(--hue);
+    --white: oklch(var(--white-oklch));
+
+    --cyan-400-oklch: 80% 0.2 195;
+    --cyan-400: oklch(var(--cyan-400-oklch));
+
+    --cyan-200-oklch: 87.5% 0.2 195;
+    --cyan-200: oklch(var(--cyan-200-oklch));
+
+    /* ---------------------- */
+    /* SEMANTIC COLORS VALUES */
+    /* ---------------------- */
+    --background-oklch: var(--gray-800-oklch);
+    --background: oklch(var(--background-oklch));
+
+    --foreground-oklch: var(--gray-100-oklch);
+    --foreground: oklch(var(--foreground-oklch));
+
+    --surface-1-oklch: var(--gray-650-oklch);
+    --surface-1: oklch(var(--surface-1-oklch));
+
+    --accent-color-oklch: var(--cyan-200-oklch);
+    --accent-color: oklch(var(--accent-color-oklch));
+
+    --focus-color: oklch(92.21% 0.128 195.15);
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --background-oklch: var(--white-oklch);
+      --foreground-oklch: var(--gray-900-oklch);
+
+      --surface-1-oklch: var(--gray-100-oklch);
+
+      --accent-color-oklch: var(--cyan-400-oklch);
+    }
+  }
+}

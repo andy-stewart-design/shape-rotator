@@ -1,0 +1,28 @@
+@layer base, modules, overrides;
+
+@import "./styles-base/reset.css";
+@import "./styles-base/color.css";
+
+@layer base {
+  body {
+    --focus-offset: 3px;
+
+    --transition-duration: 250ms;
+    --transision-ease: cubic-bezier(0.33, 1, 0.68, 1);
+
+    color: var(--foreground);
+    background-color: var(--background);
+  }
+
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+}

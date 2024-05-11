@@ -1,0 +1,4 @@
+.canvas-wrapper {
+  background: var(--gray-900);
+  width: fit-content;
+}
